@@ -1,9 +1,9 @@
 import torch
-import math, copy
+import math
 import torch.nn.functional as F
 import torch.nn as nn
 
-from utils import clones
+from utils.utils import clones
 
 def attention(query, key, value, mask=None, dropout=None):   #query:[batch_size, ]
     d_k = query.size(-1)
